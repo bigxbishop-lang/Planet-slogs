@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import Link from "next/link";
+
 import { useToast } from "@/components/toast";
 
 type Snail = {
@@ -307,7 +309,7 @@ export default function RacePage() {
                     your WL spot.
                   </div>
                   <div className="flex gap-3 justify-center">
-                    <Link
+                    <a
                       href="/apply"
                       className="px-6 py-3 rounded-xl font-display tracking-wider text-white transition-all hover:scale-[1.03]"
                       style={{
@@ -316,7 +318,7 @@ export default function RacePage() {
                       }}
                     >
                       CLAIM WL SPOT
-                    </Link>
+                    </a>
                     <button
                       type="button"
                       onClick={resetRace}
