@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 15 20% 8%;
+  --foreground: 40 80% 92%;
+  --border: 30 30% 25%;
+  --input: 30 30% 20%;
+  --ring: 26 90% 55%;
+  --primary: 26 90% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 268 65% 55%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 15 20% 18%;
+  --muted-foreground: 30 25% 65%;
+  --accent: 43 75% 55%;
+  --accent-foreground: 15 20% 8%;
+  --radius: 0.75rem;
+  --font-sans: 'Nunito', sans-serif;
+  --font-display: 'Boogaloo', cursive;
+}
+
+@layer base {
+  * {
+    @apply border-border box-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .text-glow-orange {
+    text-shadow: 0 0 20px rgba(230, 130, 50, 0.8), 0 0 40px rgba(230, 130, 50, 0.4);
+  }
+
+  .text-glow-purple {
+    text-shadow: 0 0 20px rgba(150, 80, 200, 0.8), 0 0 40px rgba(150, 80, 200, 0.4);
+  }
+
+  .text-glow-gold {
+    text-shadow: 0 0 20px rgba(200, 160, 60, 0.8), 0 0 40px rgba(200, 160, 60, 0.4);
+  }
+
+  .panel-glass {
+    background: rgba(20, 12, 8, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(200, 120, 40, 0.25);
+  }
+
+  .shimmer-text {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--accent)) 0%,
+      hsl(var(--primary)) 40%,
+      hsl(var(--secondary)) 60%,
+      hsl(var(--accent)) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+  }
+
+  .glow-btn {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}
