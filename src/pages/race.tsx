@@ -1,10 +1,7 @@
-import { useNavigate } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-"use client";
-
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+import { useToast } from "../components/toast";
 
-import { useToast } from "@/components/toast";
 
 type Snail = {
   id: number;
