@@ -9,4 +9,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  preview: {
+    allowedHosts: ["planet-slogs-production.up.railway.app"],
+    port: 8080,
+    host: "0.0.0.0",
+  },
 });
