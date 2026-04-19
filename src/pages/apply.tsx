@@ -62,7 +62,7 @@ export default function ApplyPage() {
     <div className="relative min-h-screen overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/bg.jpg"
+          src="/background.jpg"
           alt="bg"
           className="w-full h-full object-cover"
           style={{ filter: "brightness(0.2) saturate(0.8)" }}
@@ -132,7 +132,7 @@ export default function ApplyPage() {
 
               <div className="panel-glass rounded-2xl overflow-hidden">
                 <img
-                  src="/snail-red.jpg"
+                  src="/Slog-1.jpg"
                   alt="Laser snail"
                   className="w-full object-cover"
                   style={{ maxHeight: "200px", objectPosition: "top" }}

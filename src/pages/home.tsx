@@ -41,7 +41,7 @@ export default function Home() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/src/assets/background.jpg"
+          src="/background.jpg"
           alt="background"
           className="w-full h-full object-cover"
           style={{ filter: "brightness(0.55) saturate(1.2)" }}
@@ -116,11 +116,11 @@ export default function Home() {
         {/* Bottom snail images */}
         <div className="mt-14 flex items-end gap-8 justify-center">
           <div className="animate-float w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-orange-500/30 shadow-xl opacity-80">
-            <img src="/snail-red.jpg" alt="Red snail" className="w-full h-full object-cover" />
+            <img src="/Slog-1.jpg" alt="Red snail" className="w-full h-full object-cover" />
           </div>
           <div className="animate-float w-20 h-20 md:w-28 md:h-28 rounded-2xl overflow-hidden border-2 border-purple-500/30 shadow-xl opacity-70"
             style={{ animationDelay: "0.8s" }}>
-            <img src="/snail-bag.jpg" alt="Bag snail" className="w-full h-full object-cover" />
+            <img src="/Slog-2.jpg" alt="Bag snail" className="w-full h-full object-cover" />
           </div>
         </div>
 

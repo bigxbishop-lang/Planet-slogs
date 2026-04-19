@@ -149,7 +149,7 @@ export default function RacePage() {
     <div className="relative min-h-screen overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/bg.jpg"
+          src="/background.jpg"
           alt="bg"
           className="w-full h-full object-cover"
           style={{ filter: "brightness(0.15) saturate(0.8)" }}
