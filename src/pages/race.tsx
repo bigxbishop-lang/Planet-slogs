@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { useToast } from "../components/toast";
+import { useToast } from "../hooks/use-toast";
 
 
 type Snail = {
